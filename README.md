@@ -28,6 +28,9 @@ with lazy.nvim:
 ```lua
 use {
 	"JefferyBoy/bookmark_nvim",
+	dependencies = {
+	    "MunifTanjim/nui.nvim",
+	},
 	config = function()
 		require("bookmark_nvim").setup()
 	end,
@@ -50,6 +53,7 @@ use {
 - `d` Delete the bookmark/group.
 - `r` Rename the bookmark/group.
 - `i` Show information about the bookmark/group.
+- `o` Show menu for the bookmark/group.
 - `<C-Up>` Move the bookmark/group up.
 - `<C-Down>` Move the bookmark/group down.
 
@@ -72,6 +76,8 @@ local opts = {
 			bookmark_rename = "r",
 			-- toggle wrap
 			bookmark_toggle_wrap = "f",
+            -- show menu
+			bookmark_show_menu = "o",
 			-- move bookmark up
 			bookmark_move_up = "<C-Up>",
 			-- move bookmark down
@@ -95,3 +101,4 @@ SideBar
 Telescope plugin
 
 ![Telescope](https://fastly.jsdelivr.net/gh/JefferyBoy/pictures@master/2024/17258844834162024-09-09_20-18-50.png)
+
