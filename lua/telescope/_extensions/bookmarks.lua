@@ -5,7 +5,7 @@ local pickers = require("telescope.pickers")
 local sorters = require("telescope.sorters")
 local actions = require("telescope.actions")
 local action_state = require("telescope.actions.state")
-local bookmark = REQUIRE_MODULE("bookmark_nvim.bookmark")
+local bookmark = require("bookmark_nvim.bookmark")
 
 local function bookmark_picker(opts)
 	opts = opts or {}
